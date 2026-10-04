@@ -1,0 +1,24 @@
+{
+  "name": "djs-broadcast",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Personalisierte Broadcast-Nachrichten im ChurchTools Chat",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && vite build",
+    "test": "vitest run",
+    "check": "npm run test && npm run build",
+    "deploy": "npm run check && node scripts/package.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@churchtools/churchtools-client": "^1.4.0",
+    "@types/node": "^24.3.0",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.2",
+    "vitest": "^4.1.11"
+  }
+}
